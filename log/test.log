@@ -1,0 +1,462 @@
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<Rack::Test::UploadedFile:0x007fcd034f1ca8 @content_type=nil, @original_filename="example_input.tab", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/example_input.tab20140212-43600-1o8890u>>}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (4.6ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:26:54 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fcd03366aa0,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:26:54 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:26:54 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fcd03330e00,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:26:54 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:26:54 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fcd03664798,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:26:54 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:26:54 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fcd03075aa8,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:26:54 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 19ms
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<Rack::Test::UploadedFile:0x007fe6bc8a0160 @content_type=nil, @original_filename="example_input.tab", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/example_input.tab20140212-43605-1iy3cwr>>}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:27:05 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fe6bcc91be8,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:27:05 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:27:05 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fe6bc9a9b60,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:27:05 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:27:05 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fe6bca61af8,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:27:05 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:27:05 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fe6bcd62810,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:27:05 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 15ms
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<Rack::Test::UploadedFile:0x007ffddae18450 @content_type=nil, @original_filename="example_input.tab", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/example_input.tab20140212-43610-yzqg1x>>}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (3.3ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:27:12 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7ffdda85c958,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:27:12 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:27:12 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7ffdd9f1ab88,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:27:12 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:27:12 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7ffdda87d2e8,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:27:12 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:27:12 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7ffdd9f2de18,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:27:12 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 17ms
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<Rack::Test::UploadedFile:0x007fe2fb5391a8 @content_type=nil, @original_filename="example_input.tab", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/example_input.tab20140212-43615-fu4zru>>}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (4.4ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:27:20 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fe2fb180ea8,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:27:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:27:20 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fe2fa3cb218,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:27:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:27:20 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fe2fa7a9588,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:27:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:27:20 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fe2fa3fc228,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:27:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 19ms
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<Rack::Test::UploadedFile:0x007fdccbf0c940 @content_type=nil, @original_filename="example_input.tab", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/example_input.tab20140212-43616-ns15a4>>}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:27:25 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fdccbfb20e8,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:27:25 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:27:25 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fdccd999678,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:27:25 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:27:25 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fdccda5aa08,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:27:25 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:27:25 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fdccbfdd0b8,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:27:25 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 15ms
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<Rack::Test::UploadedFile:0x007fa62520d258 @content_type=nil, @original_filename="example_input.tab", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/example_input.tab20140212-43621-1sj8uqk>>}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:28:28 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fa6246f21c0,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:28:28 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:28:28 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fa6253805e0,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:28:28 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:28:28 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fa62549e788,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:28:28 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:28:28 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fa6252e7a98,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:28:28 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 15ms
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<Rack::Test::UploadedFile:0x007fe49cace6c0 @content_type=nil, @original_filename="example_input.tab", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/example_input.tab20140212-43626-1mopnzv>>}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:28:41 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fe49bb8ac90,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:28:41 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:28:41 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fe49cd0eac0,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:28:41 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:28:41 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fe49ca44a38,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:28:41 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:28:41 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fe49ca27f50,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:28:41 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 15ms
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<Rack::Test::UploadedFile:0x007fedcb954280 @content_type=nil, @original_filename="example_input.tab", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/example_input.tab20140212-43631-1fr1x76>>}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:28:53 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fedcafdc478,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:28:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:28:53 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fedcbb6a2b8,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:28:53 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:28:53 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fedcb921c40,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:28:53 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:28:53 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fedcbbbcb58,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:28:53 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 16ms
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<Rack::Test::UploadedFile:0x007fc72e210118 @content_type=nil, @original_filename="example_input.tab", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/example_input.tab20140212-43638-19z21x7>>}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:29:07 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fc72e5db5b8,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:29:07 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:29:07 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fc72e37eb80,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:29:07 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:29:07 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fc72e014d00,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:29:07 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:29:07 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fc72d7be610,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:29:07 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 16ms
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<Rack::Test::UploadedFile:0x007fd41225fb78 @content_type=nil, @original_filename="example_input.tab", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/example_input.tab20140212-43643-h4a97d>>}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:29:20 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fd412424a58,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:29:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:29:20 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fd410f69190,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:29:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:29:20 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fd4120d5af0,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:29:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:29:20 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fd410f46410,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:29:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 16ms
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<Rack::Test::UploadedFile:0x007facd3b02c78 @content_type=nil, @original_filename="example_input.tab", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/example_input.tab20140212-43648-k755dx>>}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:29:32 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7facd2b3cb18,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:29:32 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:29:32 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7facd3838498,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:29:32 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:29:32 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7facd3aa6220,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:29:32 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:29:32 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7facd2ed9b40,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:29:32 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 15ms
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<Rack::Test::UploadedFile:0x007f8f84e93f20 @content_type=nil, @original_filename="example_input.tab", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/example_input.tab20140212-43649-8jvy7n>>}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (4.8ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:29:36 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7f8f8581e338,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:29:36 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:29:36 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7f8f84f9d6c8,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:29:36 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:29:36 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7f8f8599be40,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:29:36 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:29:36 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7f8f85ae2538,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:29:36 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 19ms
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<Rack::Test::UploadedFile:0x007fd2440cabe8 @content_type=nil, @original_filename="example_input.tab", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/example_input.tab20140212-43668-pugdcn>>}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:31:02 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fd24414d3b8,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:31:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:31:02 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fd24428a960,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:31:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:31:02 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fd2444f20b8,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:31:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:31:02 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fd244234010,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:31:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 15ms
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7f96f48b0668,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7f96f3d86990,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7f96f4964af0,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7f96f3eb1cc0,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7f96f4885cd8,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7f96f4865668,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7f96f489ca50,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7f96f3b83c10,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:32:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36mPurchase Load (0.1ms)[0m  [1mSELECT "purchases".* FROM "purchases" ORDER BY id[0m
+  [1m[35mPurchase Load (0.1ms)[0m  SELECT "purchases".* FROM "purchases" ORDER BY id
+  [1m[36mPurchase Load (0.1ms)[0m  [1mSELECT "purchases".* FROM "purchases" ORDER BY id[0m
+  [1m[35mPurchase Load (0.1ms)[0m  SELECT "purchases".* FROM "purchases" ORDER BY id
+  [1m[36m (0.1ms)[0m  [1mSELECT SUM("purchases"."item_price") AS sum_id FROM "purchases" [0m
+  [1m[35m (0.1ms)[0m  SELECT SUM("purchases"."purchase_count") AS sum_id FROM "purchases" 
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<Rack::Test::UploadedFile:0x007fb8edbee468 @content_type=nil, @original_filename="example_input.tab", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/example_input.tab20140212-43697-1oyrkn6>>}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:32:02 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fb8ed85b418,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:32:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:32:02 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fb8ed8ef280,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:32:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:32:02 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fb8eced5c40,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:32:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:32:02 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fb8ecd0afa0,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:32:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 15ms
+  [1m[35m (0.1ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT("purchases"."id") FROM "purchases" [0m
+  Processing by PurchasesController#create as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT("purchases"."id") FROM "purchases" 

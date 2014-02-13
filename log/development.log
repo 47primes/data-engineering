@@ -1,0 +1,1096 @@
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePurchases (20140212141349)
+  [1m[35m (0.3ms)[0m  CREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140212141349')[0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("purchases")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (2.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (13.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (17.2ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (36.3ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (35.6ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (17.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (6.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (10.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (11.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.6ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (10.2ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (24.9ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.6ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (23.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:20:46 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:20:46 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:20:46 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:21:02 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:21:02 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:21:02 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:21:19 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:21:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:21:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/purchases" for 127.0.0.1 at 2014-02-12 16:21:48 -0600
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fdc65ee0590 @original_filename="example_input.tab", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"example_input.tab\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/RackMultipart20140212-42955-pe5si1>>, "Submit"=>"Submit"}
+WARNING: Can't verify CSRF token authenticity
+#<ActionDispatch::Http::UploadedFile:0x007fdc65ee0590>
+Redirected to http://localhost:3002/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:21:48 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:21:48 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:21:48 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+  [1m[36m (85.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (40.2ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:30:14 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:30:14 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:30:14 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started POST "/purchases" for 127.0.0.1 at 2014-02-12 16:30:22 -0600
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa178a11eb0 @original_filename="example_input.tab", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"example_input.tab\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/RackMultipart20140212-43052-10lsct4>>, "Submit"=>"Submit"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 4ms
+
+NameError (undefined local variable or method `tmpfile' for #<PurchasesController:0x007fa178a13300>):
+  app/controllers/purchases_controller.rb:4:in `create'
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (12.9ms)
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:30:37 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:30:37 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:30:37 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/purchases" for 127.0.0.1 at 2014-02-12 16:30:42 -0600
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa178f3b418 @original_filename="example_input.tab", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"example_input.tab\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/RackMultipart20140212-43052-6e5sab>>, "Submit"=>"Submit"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `tempfile' for #<PurchasesController:0x007fa178f21e28>):
+  app/controllers/purchases_controller.rb:4:in `create'
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:37:16 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:37:16 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:37:16 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/purchases" for 127.0.0.1 at 2014-02-12 16:37:20 -0600
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa17590e430 @original_filename="example_input.tab", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"example_input.tab\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/RackMultipart20140212-43052-qm8x8y>>, "Submit"=>"Submit"}
+WARNING: Can't verify CSRF token authenticity
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (40.9ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 22:37:20 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fa176f430e8,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 22:37:20 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 22:37:20 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fa1780190c0,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 22:37:20 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 22:37:20 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fa178029fd8,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 22:37:20 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 22:37:20 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fa178071568,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 22:37:20 UTC +00:00]]
+Redirected to http://localhost:3002/
+Completed 302 Found in 59ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:37:20 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:37:20 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:37:20 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:40:04 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 25ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:40:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:40:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/purchases" for 127.0.0.1 at 2014-02-12 16:40:08 -0600
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fab200e2158 @original_filename="example_input.tab", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"example_input.tab\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/RackMultipart20140212-43115-199rl49>>, "Submit"=>"Submit"}
+WARNING: Can't verify CSRF token authenticity
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 22:40:08 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fab20156940,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 22:40:08 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 22:40:08 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fab206733b0,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 22:40:08 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 22:40:08 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fab20679f80,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 22:40:08 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 22:40:08 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fab2059d738,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 22:40:08 UTC +00:00]]
+Redirected to http://localhost:3002/
+Completed 302 Found in 37ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:40:08 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:40:08 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:40:08 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started POST "/purchases" for 127.0.0.1 at 2014-02-12 16:40:26 -0600
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fab202a2bf0 @original_filename="example_input.tab", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"example_input.tab\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/RackMultipart20140212-43115-1nw6cf6>>, "Submit"=>"Submit"}
+WARNING: Can't verify CSRF token authenticity
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 22:40:26 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fab201e9678,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 22:40:26 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 22:40:26 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fab204f0ce0,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 22:40:26 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 22:40:26 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fab1ee6da18,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 22:40:26 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 22:40:26 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fab206c6588,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 22:40:26 UTC +00:00]]
+Redirected to http://localhost:3002/
+Completed 302 Found in 21ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:40:26 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:40:26 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:40:26 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:40:30 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:40:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:40:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:40:32 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:40:32 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:40:32 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started POST "/purchases" for 127.0.0.1 at 2014-02-12 16:40:42 -0600
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fab1ee6d068 @original_filename="example_input.tab", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"example_input.tab\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/RackMultipart20140212-43115-1h8zkdw>>, "Submit"=>"Submit"}
+WARNING: Can't verify CSRF token authenticity
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 22:40:42 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fab2067af70,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 22:40:42 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 22:40:42 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fab2059da58,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 22:40:42 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 22:40:42 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fab205c12f0,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 22:40:42 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 22:40:42 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fab1c8828d0,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 22:40:42 UTC +00:00]]
+Redirected to http://localhost:3002/
+Completed 302 Found in 22ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:40:42 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:40:42 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:40:42 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:40:53 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:40:54 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:40:54 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started POST "/purchases" for 127.0.0.1 at 2014-02-12 16:41:07 -0600
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa19d8b8af8 @original_filename="example_input.tab", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"example_input.tab\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/RackMultipart20140212-43125-mkzkbi>>, "Submit"=>"Submit"}
+WARNING: Can't verify CSRF token authenticity
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (5.4ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 22:41:07 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7fa19d8b9368,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 22:41:07 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 22:41:07 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7fa19c6d9b48,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 22:41:07 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 22:41:07 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fa19c0e1678,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 22:41:07 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 22:41:07 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7fa19d54b9d8,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 22:41:07 UTC +00:00]]
+Redirected to http://localhost:3002/
+Completed 302 Found in 40ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 16:41:07 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 16:41:07 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 16:41:07 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (29.6ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.6ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (5.7ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.7ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (13.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (7.4ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.6ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.6ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser_name" varchar(255), "item_description" text, "item_price" decimal, "purchase_count" integer, "merchant_name" varchar(255), "merchant_address" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140212141349')
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 17:32:29 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 69ms (Views: 68.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 17:32:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 17:32:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started POST "/purchases" for 127.0.0.1 at 2014-02-12 17:32:36 -0600
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007ffdcefc6178 @original_filename="example_input.tab", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"example_input.tab\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/RackMultipart20140212-43699-1omw2av>>, "Submit"=>"Submit"}
+WARNING: Can't verify CSRF token authenticity
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:32:36 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7ffdcda4dff8,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:32:36 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:32:36 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7ffdcdd02258,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:32:36 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:32:36 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7ffdcdd09120,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:32:36 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:32:36 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7ffdcdf7eec8,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:32:36 UTC +00:00]]
+Redirected to http://localhost:3002/
+Completed 302 Found in 37ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 17:32:36 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 17:32:36 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 17:32:36 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 17:37:56 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 13ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 17:37:57 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 17:37:57 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/purchases" for 127.0.0.1 at 2014-02-12 17:38:02 -0600
+  Processing by PurchasesController#create as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007f9c90e065f8 @original_filename="example_input.tab", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"example_input.tab\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/dt/g0p71kzd3sz811xw5tqp22r80000gn/T/RackMultipart20140212-43723-104afv3>>, "Submit"=>"Submit"}
+WARNING: Can't verify CSRF token authenticity
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (18.1ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:38:02 UTC +00:00], ["item_description", "$10 off $20 of food"], ["item_price", #<BigDecimal:7f9c9097d770,'0.1E2',9(18)>], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:38:02 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:38:02 UTC +00:00], ["item_description", "$30 of awesome for $10"], ["item_price", #<BigDecimal:7f9c8a4dbe48,'0.1E2',9(18)>], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", Wed, 12 Feb 2014 23:38:02 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Feb 2014 23:38:02 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7f9c8ac24268,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", Wed, 12 Feb 2014 23:38:02 UTC +00:00]]
+Binary data inserted for `string` type on column `merchant_address`
+Binary data inserted for `string` type on column `merchant_name`
+Binary data inserted for `string` type on column `purchaser_name`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "purchases" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Feb 2014 23:38:02 UTC +00:00], ["item_description", "$20 Sneakers for $5"], ["item_price", #<BigDecimal:7f9c8f830bc0,'0.5E1',9(18)>], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", Wed, 12 Feb 2014 23:38:02 UTC +00:00]]
+Redirected to http://localhost:3002/
+Completed 302 Found in 41ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-12 17:38:02 -0600
+  Processing by PurchasesController#new as HTML
+Rendered purchases/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-02-12 17:38:02 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-02-12 17:38:02 -0600
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  
+
+Rendered /Users/mbradford/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.1.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)

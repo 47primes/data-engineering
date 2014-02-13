@@ -1,0 +1,5 @@
+# Getting Started
+
+1. clone repository
+2.     > bundle install
+3.     > rails s
